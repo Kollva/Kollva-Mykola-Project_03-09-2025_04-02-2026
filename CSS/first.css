@@ -24,7 +24,7 @@ html {
     height: auto;
 }
 
-@media (max-width: 425px) {
+@media(max-width: 475px) {
     .logo1logo {
         display: none;
     }
@@ -35,24 +35,14 @@ html {
     gap: 3vw;
 }
 
-@media(max-width: 425px) {
+
+@media(max-width: 475px) {
     .header_navigation {
-
-        display: contents;
-        justify-content: center;
-    }
-
-
-
-}
-
-@media(max-width: 375px) {
-    .header_navigation {
-        display: none;
+        display: flex;
     }
 
     .logo1logo {
-        display: flex;
+        display: none;
     }
 
 }
@@ -85,17 +75,17 @@ html {
 
 @media(max-width: 768px) {
     .Welcome_to {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .strg1 {
-        font-size: 9vw;
+        font-size: 10vw;
     }
 }
 
 .START_YOUR {
 
-    padding: 20px;
+
     padding: 1rem 2rem;
     border-radius: 10px;
     background-color: black;
@@ -584,4 +574,73 @@ a.grau {
 
 .title-in-item .LEARN_MORE {
     font-weight: normal;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header-navigation a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.header-navigation a:hover {
+    color: #555;
+}
+
+.header-navigation .cta {
+    padding: 10px 18px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.header-navigation .cta:hover {
+    background: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        display: none;
+    }
 }
